@@ -1,0 +1,5 @@
+groupBy(["#event_simpleName"])   
+//| "#event_simpleName" = CommandHistory
+//"#event_simpleName" = DnsRequest 
+//| groupBy([DomainName]) 
+//| sort(_count)
