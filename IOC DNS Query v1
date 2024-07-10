@@ -1,0 +1,8 @@
+/*
+IOC DNS Query v1
+主機受入侵後，可能查詢的網域名稱 api.ipify.org
+依照事件類別篩選 | 依照網域名稱篩選
+參考情資
+https://any.run/report/cd6c05138680001d640a47ed988487797a4b77e95bff6c4f57ae57d294aa53e1/ce03744d-bb4b-492d-8c4b-bee1913af4ed
+*/
+"#event_simpleName" = DnsRequest | DomainName = api.ipify.org)
