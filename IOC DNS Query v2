@@ -1,0 +1,7 @@
+/*
+IOC DNS Query v2
+主機受入侵後，可能查詢的網域名稱
+*/
+"#event_simpleName" = DnsRequest
+|in(DomainName, values=[raw.githubusercontent.com, "ip-api.com", bc.googleusercontent.com,linodeusercontent.com, doddyfire.linkpc.net,api.ipify.org])
+|!in(ComputerName, values=["KP-DESKTOP"])
